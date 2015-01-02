@@ -29,7 +29,7 @@ sub getCurrentWifiSSID {
 
 sub getSpeedTestResults {
     my $result;
-    my $cmdResult = `speedtest-cli`;
+    my $cmdResult = `/usr/local/bin/speedtest-cli`;
     die $cmdResult if $? != 0;
     $cmdResult =~ /^Testing from ([^\(]+)\s+\(.*/m;
     $result->{provider} = $1;

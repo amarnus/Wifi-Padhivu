@@ -1,4 +1,5 @@
 requires 'perl', '5.008001';
+requires 'DBD::Pg';
 requires 'DBI';
 
 on 'test' => sub {

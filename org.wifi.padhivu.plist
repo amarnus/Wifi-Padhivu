@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>org.wifi.padhivu</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/Users/amar/perl5/perlbrew/perls/perl-5.18.2_WITH_THREADS/bin/carton</string>
+		<string>exec</string>
+		<string>/Users/amar/perl5/perlbrew/perls/perl-5.18.2_WITH_THREADS/bin/perl</string>
+		<string>script/recorder.pl</string>
+	</array>
+	<key>WorkingDirectory</key>
+	<string>/Users/amar/Code/Wifi-Padhivu</string>
+	<key>StandardErrorPath</key>
+	<string>/Users/amar/Code/Wifi-Padhivu/logs/error.log</string>
+	<key>StandardOutPath</key>
+	<string>/Users/amar/Code/Wifi-Padhivu/logs/out.log</string>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>ExitTimeOut</key>
+	<integer>299</integer>
+</dict>
+</plist>
