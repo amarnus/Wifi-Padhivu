@@ -34,9 +34,9 @@ sub getSpeedTestResults {
     $cmdResult =~ /^Testing from ([^\(]+)\s+\(.*/m;
     $result->{provider} = $1;
     $cmdResult =~ /^Download: (.*)$/m;
-    $result->{download_speed} = ($1 =~ s/\s+Mbits\/s//r);
+    $result->{speed_download} = ($1 =~ s/\s+Mbits\/s//r);
     $cmdResult =~ /^Upload: (.*)$/m;
-    $result->{upload_speed} = ($1 =~ s/\s+Mbits\/s//r);
+    $result->{speed_upload} = ($1 =~ s/\s+Mbits\/s//r);
     return $result;
 }
 
